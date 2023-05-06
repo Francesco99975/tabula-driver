@@ -37,7 +37,7 @@ def create_app(test_config=None):
     except OSError:
         pass
 
-    @app.route("/pdf", methods=['POST', 'GET'])
+    @app.route("/pdf", methods=['POST'])
     @cross_origin()
     def pdf():
         if request.method == 'POST':
@@ -108,8 +108,6 @@ def create_app(test_config=None):
                 return Response(response=e.msg, status=500)
             except:
                 return Response(response="Error Occurred", status=500)
-        elif request.method == 'GET':
-            return "Hello PDF"
         else:
             return Response({'error': 'something went wrong'}, mimetype='application/json', status=500)
 
