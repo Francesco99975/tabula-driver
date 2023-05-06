@@ -1,0 +1,10 @@
+[project]
+name = "tabula-driver"
+description = ""
+version = "1.0.0"
+authors = [
+    { name = "Francesco Michele Barranca", email = "francescobarranca@outlook.com" }
+]
+dynamic = ["dependencies"]
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}

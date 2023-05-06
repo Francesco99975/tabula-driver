@@ -1,0 +1,15 @@
+.vscode
+venv
+.venv
+tabula
+Dockerfile
+.dockerignore
+docker-compose.yml
+*chromedriver
+chrome.json
+main_dev.py
+build
+dist
+__pycache__
+tabula_driver.egg-info
+instance

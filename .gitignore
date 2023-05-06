@@ -1,0 +1,12 @@
+.vscode
+venv
+.venv
+tabula
+*chromedriver
+chrome.json
+build
+dist
+__pycache__
+tabula_driver.egg-info
+instance
+config
